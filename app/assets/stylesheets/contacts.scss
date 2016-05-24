@@ -1,0 +1,23 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+section.module.parallax-4 {
+  background-image: url("lunch.jpg");
+  height:300px;
+}
+
+#contact_stuff{
+	height:500px;
+	padding-top: 110px;
+	h1{
+		font-family: 'libre baskerville', serif;
+		font-style: italic;
+		color:#BC9B5D;
+		padding-bottom: 10px;
+	}	
+	p{
+		font-size:14px;
+		color:rgb(96,94,94);
+	}
+}
+
