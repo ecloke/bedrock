@@ -10,30 +10,190 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script sec="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
   </head>
   <body>
-     <link href='http://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="width:100%; background-color: rgba(0,0,0,0.7); border:none;">
-      <div class="container-fluid" >
-        <div class="navbar-header">
-          <a class="navbar-brand" style="padding:0; padding-left: 25px;" href="#"><%=image_tag("logo.png", size:"50x50")%></a>
-        </div>
-        <ul class="nav navbar-nav" style="float:right;">
-          <li><%=link_to "Home", "#"%></li>
-          <li><%=link_to "Menu", menu_index_path%></li>
-          <li><%=link_to "Contact Us", new_contact_path%></li> 
-        </ul>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
+   <nav class="navbar navbar-inverse navbar-fixed-top" style="width:100%; background-color: rgba(0,0,0,0.7); border:none;">
+    <div class="container-fluid" >
+      <div class="navbar-header">
+        <a class="navbar-brand" style="padding:0; padding-left: 25px;" href="#"><%=image_tag("logo.png", size:"50x50")%></a>
       </div>
-    </nav>
-    <%= yield %>
-    <footer>
-     <section class="module parallax parallax-2" style="height:400px;">
-      <h1>Looking for a place to host an Event?</h1>
-      <form class="button" method="get" action="/contact">
-        <input type="submit" value="Contact Us" class="contact">
-      </form>
+      <ul class="nav navbar-nav" style="float:right;">
+        <li><%=link_to "Home", root_path%></li>
+        <li><button type="button" class="btn btn-primary btn-md btn-modal" data-toggle="modal" data-target="#myModal">Menu</button></li>
+        <li><%=link_to "Contact Us", new_contact_path%></li> 
+      </ul>
+    </div>
+  </nav>
+  <%= yield %>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <section class="module parallax parallax-5">
+          <div class="modal-header" style="border: none; padding-bottom: 0px;">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-title">
+            <table>
+              <tr>
+                <td id="1" class="menu_nav">ALL DAY BREAKFAST AND BRUNCH</td>
+                <td id="2" class="menu_nav">APPETIZER & SNACKS</td>
+                <td id="3" class="menu_nav">PASTAS</td>
+                <td id="4" class="menu_nav">RICES</td>    
+                <td id="5" class="menu_nav">DRINKS</td>
+                <td id="6" class="menu_nav">DESSERTS</td>
+            </tr>
+            </table>
+            </div>
+          </div>
+          <div class="modal-body" id="pasta">
+            <h4>MARINARA</h4>
+            <p>Classic Italian tomato-based sauce with homemade sausages for the extra flavor!</p>
+            <h5>Marinara with Salted Roast Chicken<span>MYR 17</span></h5>
+            <h5>Marinara with Meat Ball<span>MYR 16</span></h5>
+            <h5>Marinara with Chicken Karaage<span>MYR 16</span></h5>
+            <h5>Marinara with Chicken Chop<span>MYR 16</span></h5>
+            <h4>PRIMAVERA</h4>
+            <p>Cream-based pasta using Parmesan Cheese, cherry tomatoes to lighten up the dish, and chili for a slight twist in flavor!</p>
+            <h5>Primavera with Salted Roast Chicken<span>MYR 17</span></h5>
+            <h5>Primavera with Smoked Salmon<span>MYR 19</span></h5>
+            <h5>Primavera with Ham & Mushrooms<span>MYR 15</span></h5>
+            <h5>Primavera with Chicken<span>MYR 15</span></h5>
+            <h5>Primavera with Meat Balls<span>MYR 16</span></h5>
+            <h5>Primavera with Chicken Karaage<span>MYR 16</span></h5>
+            <h5>Primavera with Chicken Chop<span>MYR 16</span></h5>
+            <h4>PESTO</h4>
+            <p>Basil, blended with Spanish olive oil, beautiful Parmesan Cheese, and imported Pine Nuts. Guaranteed to tingle your taste buds!</p>
+            <h5>Pesto with Salted Roast Chicken<span>MYR 17</span></h5>
+            <h5>Pesto with Chicken<span>MYR 15</span></h5>
+            <h5>Pesto with Chicken Karaage<span>MYR 16</span></h5>
+            <h5>Pesto with Chicken Chop<span>MYR 16</span></h5>
+          </div>
+          <div class="modal-body" id="rice">
+            <h4>Kedgeree</h4>
+            <p>‘Anglo-Indian curried mixed rice classic comes mingled with chicken and raisins, topped with boiled eggs, with an enjoyable smoky-spicy flavor!’ (EatDrinkKL, 2015)</p>
+            <h5>Kedgeree with Salted Roast Chicken<span>MYR 16</span></h5>
+            <h5>Kedgeree with Chicken<span>MYR 13</span></h5>
+            <h5>Kedgeree with Chicken Karaage<span>MYR 16</span></h5>
+            <h5>Kedgeree with Chicken Chop<span>MYR 16</span></h5>
+            <h4>KIMCHI FRIED RICE</h4>
+            <p>Our rendition of the Classic Kimchi Fried Rice from Korea!</p>
+            <h5>Kimchi Fried Rice with Salted Roast Chicken<span>MYR 16</span></h5>
+            <h5>Kimchi Fried Rice with Chicken<span>MYR 13</span></h5>
+            <h5>Kimchi Fried Rice with Chicken Karaage<span>MYR 16</span></h5>
+            <h5>Kimchi Fried Rice with Chicken Chop<span>MYR 16</span></h5>
+            <h4>CAJUN RICE</h4>
+            <p>Basil, blended with Spanish olive oil, beautiful Parmesan Cheese, and imported Pine Nuts. Guaranteed to tingle your taste buds!</p>
+            <h5>Cajun Rice with Salted Roast Chicken<span>MYR 16</span></h5>
+            <h5>Cajun Rice with Chicken Karaage<span>MYR 16</span></h5>
+            <h5>Cajun Rice with Chicken Chop<span>MYR 16</span></h5>
+          </div>
+
+          <div class="modal-body" id="breakfast">
+            <h4>ALL DAY BREAKFAST AND BRUNCH</h4>
+            <h5>The Big Breakfast<span>MYR 19</span></h5>
+            <p>Your choice of: -  Sunny side up / Scrambled eggs, - Mashed potatoes / Potato Rosti Served with house-baked toasted bread, homemade sausages, and some smoked salmon.</p>
+            <h5>Shakshouka (Baked Eggs)<span>MYR 16</span></h5>
+            <p>Cherry tomatoes, capsicums, herbs, pulled chicken, with a yogurt sauce served on the side to lighten the dish up!</p>
+            <h5>Smoked Salmon Stack<span>MYR 15</span></h5>
+            <p>Pickled red onions on top of layers of quality smoked salmon, on our home-baked challah bread slathered with sour cream. It is then garnished with lightly pan-fried capers and parsley!</p>
+            <h5>Smoked Salmon Sandwich<span>MYR 15</span></h5>
+            <p>Smoked salmon tartare, fresh romaine, and sunny side up.</p>
+            <h5>Smoked Salmon with Potato Rosti<span>MYR 15</span></h5>
+            <p>Served with fresh avocado, sour cream, and a wedge of lemon.</p>
+            <h5>Pulled Chicken Sandwich<span>MYR 12</span></h5>
+            <p>Served with wedges on the side, mustard sauce, cherry tomato relish.</p>
+            <h5>Mushroom Toasties<span>MYR 12</span></h5>
+            <p>Homemade Toasted Challah Bread with olive oil and rosemary, topped with sautéed mushrooms, creamy scramble eggs and a vinaigrette!</p>
+          </div>
+
+          <div class="modal-body" id="snacks">
+            <h4>SALADS</h4>
+            <h5>Tossed In-house Salad<span>MYR 9</span></h5>
+            <p>Romaine, cucumbers, cherry tomatoes, onions, peppers, a hard-boiled egg & our in-house dressing.</p>
+            <h5>Smoked Salmon Salad<span>MYR 12</span></h5>
+            <p>Smoked salmon atop romaine, cherry tomatoes, onions, bell peppers, dressed with roasted sesame sauce.</p>
+            <h5>Pulled Chicken Salad<span>MYR 9</span></h5>
+            <p>Healthy pulled chicken served with, cherry tomatoes, onions, bell peppers, and roasted sesame sauce.</p>
+            <h5>Potato Salad<span>MYR 5.50</span></h5>
+            <p>Cubed potatoes, cooled and tossed with a mix of wholegrain mustard and mayonnaise. Garnished with spring onions for that burst of freshness!</p>
+            <h5>Homemade Coleslaw<span>MYR 5.50</span></h5>
+            <p>Cabbage, carrots, onions. Raw, shredded and beautifully done.</p>
+            <h4>SNACKS</h4>
+            <h5>Double Cooked Wedges<span>MYR 5.50</span></h5>
+            <p>To give you the perfect crunch on the outside and fluffiness on the inside!</p>
+            <h5>Creamy Mashed Potatoes<span>MYR 5.50</span></h5>
+            <p>Topped with roasted sesame sauce for extra yumminess!</p>
+            <h5>Chicken Karaage<span>MYR 7.50</span></h5>
+            <p>Chicken cubes, deep fried with panko bread crumbs, served with a slice of lemon to give it an extra zing!</p>
+          </div>
+           <div class="modal-body" id="dessert">
+            <h4>PANCAKES</h4>
+            <h5>Choco-Banana Pancakes<span>MYR 12</span></h5>
+            <p>Homemade fluffy pancakes, top with grilled bananas, a generous serving of ice-cream, drizzled with chocolate sauce and crushed almond nuts!</p>
+            <h5>Honey-Butter Pancakes<span>MYR 8</span></h5>
+            <p>Homemade fluffy pancakes, served with honey and a knob of butter!</p>
+            <h4>FRENCH TOASTS</h4>
+            <h5>Bedrock's Signature French Toast<span>MYR 16</span></h5>
+            <p>Cinnamon French Toast, top with grilled bananas, homemade peanut butter ice-cream, drizzled with chocolate and strawberry sauce and crushed almond nuts!</p>
+          </div>
+          <div class="modal-body" id="drinks">
+          <h4>CANNED DRINKS</h4>
+          <h5>Coca-Cola<span>MYR 4</span></h5>
+          <h5>Root Beer<span>MYR 4</span></h5>
+          <h5>100 plus<span>MYR 4</span></h5>
+          <h5>Coca-Cola Float<span>MYR 7.50</span></h5>
+          <h5>Root Beer Float<span>MYR 7.50</span></h5>
+          <h4>BEERS</h4>
+          <p>ANY THREE BEERS FOR MYR 48</p>
+          <p>5 CALRSBERG FOR MYR 45</p>
+          <h5>Budweiser<span>MYR 17</span></h5>
+          <h5>Hoegarden<span>MYR 17</span></h5>
+          <h5>Stella Artois<span>MYR 17</span></h5>
+          <h5>Asahi<span>MYR 17</span></h5>
+          <h5>Somersby Apple Cider<span>MYR 17</span></h5>
+          <h5>Kronenourg Blanc<span>MYR 17</span></h5>
+          <h5>Carlsberg<span>MYR 15</span></h5>  
+          <h4>FRUIT JUICES</h4>
+          <h5>Apple<span>MYR 4</span></h5>
+          <h5>Watermelon<span>MYR 4</span></h5>
+          <h5>Carrot<span>MYR 4</span></h5>
+          <h5>Carrot Milk<span>MYR 7.50</span></h5>
+          <h5>Double Fruit Juices<span>MYR 7.50</span></h5>
+          <h4>TEA</h4>
+          <h5>Chamomile<span>MYR 7</span></h5>
+          <h5>Earl Grey<span>MYR 7</span></h5>
+          <h5>Japnese Sencha<span>MYR 7</span></h5>
+          <h5>English Breakfast<span>MYR 7</span></h5>
+          <h4>BLACK COFFEE</h4>
+          <h5>Espresso<span>MYR 5</span></h5>
+          <h5>Long-Black<span>MYR 6</span></h5>
+          <h5>Americano <span>MYR 6</span></h5>
+          <h4>MILK-BASED COFFEE</h4>
+          <h5>Flat White<span>MYR 9</span></h5>
+          <h5>Latte<span>MYR 9</span></h5>
+          <h5>Cappucino<span>MYR 9</span></h5>
+          <h4>CHOCOLATE</h4>
+          <h5>Mocha<span>MYR 4</span></h5>
+          <h5>Hot Chocolate<span>MYR 4</span></h5>
+          <h4>OTHERS</h4>
+          <h5>Milk<span>MYR 4</span></h5>
+          <h5>Iced/Hot Lemon Tea<span>MYR 4</span></h5>
+          <h5>Chai Latte<span>MYR 4</span></h5>                
+          </div>
+        </div>
+      </div>
     </section>
-  </footer>
-  </body>
-  </html>
+  </div>
+  <footer>
+   <section class="module parallax parallax-2" style="height:400px;">
+    <h1>Looking for a place to host an Event?</h1>
+    <form class="button" method="get" action="/contact">
+      <input type="submit" value="Contact Us" class="contact">
+    </form>
+  </section>
+</footer>
+</body>
+</html>

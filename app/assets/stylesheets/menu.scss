@@ -1,3 +1,107 @@
 // Place all the styles related to the menu controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.btn-modal{
+  background-color:transparent !important;
+  color:#9d9d9d !important;
+  border: none !important;
+  padding-top:15px !important;
+  padding-bottom:15px !important;
+  font-size: 13px !important;
+  padding-left: 15px !important;
+  padding-left: 15px !important;
+  
+}
+
+.btn-modal:hover{
+  color:#F5F5F5 !important;
+  }
+
+section.module.parallax-5 {
+  background-image: url("menu.jpg");
+}
+
+.modal-title{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  color:black;
+  padding-bottom:0px;
+
+}
+
+.modal-body h4{
+  font-family: "Montserrat", sans-serif;
+  font-size:25px;
+  font-weight: 700;
+  color:black;
+  border-top:3px solid black;
+  border-bottom: 3px solid black;
+  padding-top: 15px;
+  padding-bottom:15px;
+  margin-top: 35px;
+}
+
+.modal-body span{
+  float:right;
+  font-family: "Montserrat", sans-serif;
+  font-size:20px;
+  color:black;
+  font-weight: 600;
+
+}
+
+.modal-body p{
+
+  font-style: italic;
+  font-size:16px;
+  color:black;
+  margin-bottom: 35px;
+
+}
+
+.modal-body h5{
+  font-family: "Montserrat", sans-serif;
+  font-size:20px;
+  color:black;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#pasta{
+  display:none;
+}
+
+#rice{
+  display: none;
+}
+
+#snacks{
+  display: none;
+}
+
+#dessert{
+  display:none;
+}
+
+#drinks{
+  display: none;
+}
+
+#breakfast h4{
+  margin-bottom: 30px;
+}
+
+#dessert h4{
+  margin-bottom: 30px;
+}
+
+.menu_nav{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size:16px;
+  width: 100px;
+}

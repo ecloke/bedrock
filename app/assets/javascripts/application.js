@@ -17,8 +17,58 @@
 //= require jquery.onscreen.min
 
 $(document).ready(function(){
-	$('#slide').mouseenter(function(){
-		$('.comments').fadeIn('slow');
+	$("#1").click(function(){
+		$("#breakfast").show();
+		$("#pasta").hide();
+		$("#dessert").hide();
+		$("#rice").hide();
+		$("#drinks").hide();
+		$("#snacks").hide();
+
+	});
+	$("#2").click(function(){
+		$("#snacks").show();
+		$("#pasta").hide();
+		$("#dessert").hide();
+		$("#rice").hide();
+		$("#drinks").hide();
+		$("#breakfast").hide();
+
+	});
+	$("#3").click(function(){
+		$("#pasta").show();
+		$("#snacks").hide();
+		$("#dessert").hide();
+		$("#rice").hide();
+		$("#drinks").hide();
+		$("#breakfast").hide();
+
+	});
+	$("#4").click(function(){
+		$("#rice").show();
+		$("#snacks").hide();
+		$("#dessert").hide();
+		$("#pasta").hide();
+		$("#drinks").hide();
+		$("#breakfast").hide();
+
+	});
+	$("#5").click(function(){
+		$("#drinks").show();
+		$("#snacks").hide();
+		$("#dessert").hide();
+		$("#rice").hide();
+		$("#pasta").hide();
+		$("#breakfast").hide();
+
+	});
+	$("#6").click(function(){
+		$("#dessert").show();
+		$("#snacks").hide();
+		$("#drinks").hide();
+		$("#rice").hide();
+		$("#pasta").hide();
+		$("#breakfast").hide();
+
 	});
 });
-
