@@ -1,29 +1,44 @@
 <%= form_for(@contact) do |f| %>
-  <% if @contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+<% if @contact.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
 
-      <ul>
-      <% @contact.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <ul>
+    <% @contact.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :subject %><br>
-    <%= f.text_area :subject %>
-  </div>
-  <div class="actions">
-    <%= f.submit value:"SEND" %>
-  </div>
+<table class="contact-form">
+  <tr>
+    <td class="head">
+        <span class="glyphicon glyphicon-edit"></span>  Name</td>
+    <td>
+      <div class="field">
+        <%= f.text_field :name, class:"contact_stuff", id:"name_field"%>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="head"><span class="glyphicon glyphicon-envelope"></span>  Email</td>
+    <td>  
+      <div class="field">
+        <%= f.text_field :email, class:"contact_stuff", id:"email_field" %>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="head"><span class="glyphicon glyphicon-text-size"></span>  Subject</td>
+    <td>
+      <div class="field">
+        <%= f.text_area :subject, class:"contact_stuff", id:"subject_field" %>
+      </div>
+    </td>
+  </tr>
+</table>
+      <div class="actions">
+        <%= f.submit value:"SEND", class:"send-btn" %>
+      </div>
 <% end %>

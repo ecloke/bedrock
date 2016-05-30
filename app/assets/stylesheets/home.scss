@@ -82,6 +82,11 @@ section.module.parallax-1 {
   	
 }
 
+.comments:hover{
+	-webkit-transform:scale(1.25);
+	-webkit-transition: all 1s ease;
+}
+
 .comments p{
 	padding-top: 5px;
 	font-family: "Montserrat", sans-serif;

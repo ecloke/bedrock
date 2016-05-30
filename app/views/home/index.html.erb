@@ -14,34 +14,34 @@
 			<tr>
 				<td><%=image_tag("src.png", size:"400x400",class:"src_img", style:" box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.7);")%>
 				</td>
-				<td><div class="comments">
+				<td><a href="http://eatdrinkkl.blogspot.my/2015/01/bedrock-usj-taipan-subang-jaya.html" target="_blank"><div class="comments">
 					<%=image_tag("eatdrink.jpg", style:"border-radius:10px; width:50px;height:50px; float:left;")%> 
 					<%=image_tag("eatdrinklogo.jpg", style:"width:150px; height:50px;")%>
-					<h1>Sean EatDrinkKL</h1>
+					<h1>Sean</h1>
 					<p>"Bedrock's signature recommendation is deservedly its salted chicken, brined & roasted, beautifully tender & boldly tasty. This generous serving is sufficient even for hearty eaters."</p>
 				</div>
-			</td>
+			</a></td>
 		</tr>
 		<tr>
-			<td><div class="comments" style="float:left;">
+			<td><a href="http://theyumlist.net/2015/12/bedrock-restaurant-cafe-subang-jaya.html" target="_blank"><div class="comments" style="float:left;">
 				<%=image_tag("yumlist.png", style:"width:50px;height:50px; float:left;")%> 
 				<%=image_tag("yumlistlogo.jpg", style:"width:150px; height:50px;")%>
-				<h1>Monica TheYumList</h1>
+				<h1>Monica</h1>
 				<p>"Adding their own spin, Bedrock combines pulled chicken with capsicum and cherry tomatoes to create a rich stew from which to mount baked eggs. The runny yolks melted into the broth for a filling and soulful meal that took the chill off the rain."</p>
 			</div>
-		</td>
+		</a></td>
 		<td> <%=image_tag("bakedegg.jpg", size:"400x400",class:"src_img", style:" box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.7);float:right;")%>
 		</td>
 	</tr>
 	<tr>
 		<td><%=image_tag("prima1.png", size:"400x400",class:"src_img", style:" box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.7);")%>
 		</td>
-		<td><div class="comments">
+		<td><a href="http://www.taufulou.com/bedrock-cafe-usj-2/" target="_blank"><div class="comments">
 			<%=image_tag("bok.jpg", style:"border-radius:10px; width:50px;height:50px; float:left;")%> 
 			<%=image_tag("boklogo.png", style:"width:150px; height:50px;")%>
-			<h1>Bok Taufulou</h1>
+			<h1>Bok</h1>
 			<p>"Primavera served in linguine pasta is one of the best to have. Love their sauce, cheese and pasta cook to just right to my liking and portion is decent. – recommended."</p>
-		</div>
+		</div></div>
 	</td>
 </tr>
 </table>
@@ -50,61 +50,61 @@
 
 <script type="text/javascript">
 	
-$(document).ready(function(){
-	$("#1").click(function(){
-		$("#breakfast").show();
-		$("#pasta").hide();
-		$("#dessert").hide();
-		$("#rice").hide();
-		$("#drinks").hide();
-		$("#snacks").hide();
+	$(document).ready(function(){
+		$("#1").click(function(){
+			$("#breakfast").fadeIn(1000);
+			$("#pasta").hide();
+			$("#dessert").hide();
+			$("#rice").hide();
+			$("#drinks").hide();
+			$("#snacks").hide();
 
-	});
-	$("#2").click(function(){
-		$("#snacks").show();
-		$("#pasta").hide();
-		$("#dessert").hide();
-		$("#rice").hide();
-		$("#drinks").hide();
-		$("#breakfast").hide();
+		});
+		$("#2").click(function(){
+			$("#snacks").fadeIn(1000);
+			$("#pasta").hide();
+			$("#dessert").hide();
+			$("#rice").hide();
+			$("#drinks").hide();
+			$("#breakfast").hide();
 
-	});
-	$("#3").click(function(){
-		$("#pasta").show();
-		$("#snacks").hide();
-		$("#dessert").hide();
-		$("#rice").hide();
-		$("#drinks").hide();
-		$("#breakfast").hide();
+		});
+		$("#3").click(function(){
+			$("#pasta").fadeIn(1000);
+			$("#snacks").hide();
+			$("#dessert").hide();
+			$("#rice").hide();
+			$("#drinks").hide();
+			$("#breakfast").hide();
 
-	});
-	$("#4").click(function(){
-		$("#rice").show();
-		$("#snacks").hide();
-		$("#dessert").hide();
-		$("#pasta").hide();
-		$("#drinks").hide();
-		$("#breakfast").hide();
+		});
+		$("#4").click(function(){
+			$("#rice").fadeIn(1000);
+			$("#snacks").hide();
+			$("#dessert").hide();
+			$("#pasta").hide();
+			$("#drinks").hide();
+			$("#breakfast").hide();
 
-	});
-	$("#5").click(function(){
-		$("#drinks").show();
-		$("#snacks").hide();
-		$("#dessert").hide();
-		$("#rice").hide();
-		$("#pasta").hide();
-		$("#breakfast").hide();
+		});
+		$("#5").click(function(){
+			$("#drinks").fadeIn(1000);
+			$("#snacks").hide();
+			$("#dessert").hide();
+			$("#rice").hide();
+			$("#pasta").hide();
+			$("#breakfast").hide();
 
-	});
-	$("#6").click(function(){
-		$("#dessert").show();
-		$("#snacks").hide();
-		$("#drinks").hide();
-		$("#rice").hide();
-		$("#pasta").hide();
-		$("#breakfast").hide();
+		});
+		$("#6").click(function(){
+			$("#dessert").fadeIn(1000);
+			$("#snacks").hide();
+			$("#drinks").hide();
+			$("#rice").hide();
+			$("#pasta").hide();
+			$("#breakfast").hide();
 
+		});
 	});
-});
 </script>
 
