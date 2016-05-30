@@ -18,7 +18,7 @@
 
 $(document).ready(function(){
 	$("#1").click(function(){
-		$("#breakfast").show();
+		$("#breakfast").fadeIn(1000);
 		$("#pasta").hide();
 		$("#dessert").hide();
 		$("#rice").hide();
@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 	});
 	$("#2").click(function(){
-		$("#snacks").show();
+		$("#snacks").fadeIn(1000);
 		$("#pasta").hide();
 		$("#dessert").hide();
 		$("#rice").hide();
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 	});
 	$("#3").click(function(){
-		$("#pasta").show();
+		$("#pasta").fadeIn(1000);
 		$("#snacks").hide();
 		$("#dessert").hide();
 		$("#rice").hide();
@@ -45,7 +45,7 @@ $(document).ready(function(){
 
 	});
 	$("#4").click(function(){
-		$("#rice").show();
+		$("#rice").fadeIn(1000);
 		$("#snacks").hide();
 		$("#dessert").hide();
 		$("#pasta").hide();
@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 	});
 	$("#5").click(function(){
-		$("#drinks").show();
+		$("#drinks").fadeIn(1000);
 		$("#snacks").hide();
 		$("#dessert").hide();
 		$("#rice").hide();
@@ -63,7 +63,7 @@ $(document).ready(function(){
 
 	});
 	$("#6").click(function(){
-		$("#dessert").show();
+		$("#dessert").fadeIn(1000);
 		$("#snacks").hide();
 		$("#drinks").hide();
 		$("#rice").hide();
@@ -71,4 +71,5 @@ $(document).ready(function(){
 		$("#breakfast").hide();
 
 	});
+
 });
