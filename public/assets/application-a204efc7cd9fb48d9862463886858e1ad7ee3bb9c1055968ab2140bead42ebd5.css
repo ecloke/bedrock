@@ -1,0 +1,438 @@
+/* line 4, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/contacts.scss */
+section.module.parallax-4 {
+  background-image: url("contact.jpg");
+  height: 300px;
+}
+
+/* line 9, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/contacts.scss */
+#contact_stuff {
+  height: 500px;
+  padding-top: 110px;
+}
+/* line 12, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/contacts.scss */
+#contact_stuff h1 {
+  font-family: 'libre baskerville', serif;
+  font-style: italic;
+  color: #BC9B5D;
+  padding-bottom: 10px;
+}
+/* line 18, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/contacts.scss */
+#contact_stuff p {
+  font-size: 16px;
+  color: #605e5e;
+  font-family: 'libre baskerville', serif;
+}
+
+/* line 25, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/contacts.scss */
+.contact_stuff {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 31, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/contacts.scss */
+#name_field {
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 38, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/contacts.scss */
+#email_field {
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 45, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/contacts.scss */
+#subject_field {
+  width: 300px;
+  height: 120px;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 52, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/contacts.scss */
+.head {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 57, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/contacts.scss */
+.contact-form {
+  margin: auto;
+}
+
+/* line 61, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/contacts.scss */
+.send-btn {
+  background-color: #BC9B5D;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* line 4, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+section.module.parallax-3 {
+  background-image: url("indoor.jpg");
+}
+
+/* line 8, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+.title {
+  text-align: center;
+  padding-top: 150px;
+}
+
+/* line 13, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+.title h1 span {
+  font-size: 30px;
+  color: #e8f380;
+  padding-bottom: 12px;
+  line-height: 3;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* OUR COMMITMENT */
+/* line 22, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+#mission {
+  height: 300px;
+  background-image: url("commitment.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+/* line 27, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+#mission h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+}
+/* line 37, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+#mission p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* line 45, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+section.module.parallax {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* line 51, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+section.module.parallax-1 {
+  background-image: url("commit3.jpg");
+  padding-bottom: 100px;
+}
+
+/* line 56, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+#best_seller {
+  text-align: center;
+}
+/* line 58, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+#best_seller h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 100px;
+  color: #36454f;
+}
+
+/* line 68, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+#src {
+  margin-top: 100px;
+}
+
+/* line 72, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+.comments {
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px;
+  width: 500px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.7);
+  background-color: #36454f;
+  color: white;
+}
+
+/* line 85, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+.comments:hover {
+  -webkit-transform: scale(1.25);
+  -webkit-transition: all 1s ease;
+}
+
+/* line 90, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+.comments p {
+  padding-top: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 96, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/home.scss */
+.comments h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  padding-top: 10px;
+  margin: auto;
+}
+/* line 4, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+.btn-modal {
+  background-color: transparent !important;
+  color: #9d9d9d !important;
+  border: none !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  font-size: 13px !important;
+  padding-left: 15px !important;
+  padding-left: 15px !important;
+}
+
+/* line 16, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+.btn-modal:hover {
+  color: #F5F5F5 !important;
+}
+
+/* line 20, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+section.module.parallax-5 {
+  background-image: url("menu.jpg");
+}
+
+/* line 24, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+.modal-title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  padding-bottom: 0px;
+}
+
+/* line 35, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+.modal-body h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 35px;
+}
+
+/* line 47, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+.modal-body span {
+  float: right;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+/* line 56, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+.modal-body p {
+  font-style: italic;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 35px;
+}
+
+/* line 65, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+.modal-body h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* line 73, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+#pasta {
+  display: none;
+}
+
+/* line 77, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+#rice {
+  display: none;
+}
+
+/* line 81, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+#snacks {
+  display: none;
+}
+
+/* line 85, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+#dessert {
+  display: none;
+}
+
+/* line 89, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+#drinks {
+  display: none;
+}
+
+/* line 93, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+#breakfast h4 {
+  margin-bottom: 30px;
+}
+
+/* line 97, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+#dessert h4 {
+  margin-bottom: 30px;
+}
+
+/* line 101, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+.menu_nav {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  width: 100px;
+}
+
+/* line 109, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/menu.scss */
+.menu_nav:hover {
+  color: white;
+}
+/* line 1, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /home/nextacademy/Desktop/bedrock/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+footer{
+	width: 100%;
+	text-align: center;
+}
+
+section.module.parallax-2 {
+  background-image: url("commit1.jpg");
+}
+
+section.module.parallax-2 h1{
+	font-family: "Montserrat", sans-serif;
+	color:white;
+	text-transform: uppercase;
+	padding-top: 140px;
+	font-size:50px;
+	font-weight: 900;
+  margin-top: 0;
+}
+
+.contact{
+	background-color:#20b2aa; 
+	width:150px;
+	height:50px;
+	font-family: "Montserrat", sans-serif;
+	color:white;
+	margin-top: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border:none;
+    border-radius: 4px;
+  	box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.7);
+}
