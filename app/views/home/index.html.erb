@@ -3,10 +3,12 @@
 	<div class="title">
 		<h1 style="text-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 1px, rgba(0, 0, 0, 0.74902) 0px 1px 30px;"><span>Quality.Variety.Unique</span><br><%=image_tag("logo1.png")%></h1>
 	</div>
+	<% if flash[:notice] %>
 	<div class="alert alert-success" style="height:60px; width:300px; margin:auto;">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <%=flash[:notice]%>
-</div>
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<%=flash[:notice]%>
+	</div>
+	<%end%>
 </section>
 <div class= "container" id="mission">
 	<h1>Our Commitment</h1>
