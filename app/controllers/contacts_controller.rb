@@ -25,16 +25,14 @@ class ContactsController < ApplicationController
   # POST /contacts.json
   def create
     @contact = Contact.new(contact_params)
-
-    respond_to do |format|
-      if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
-        format.json { render :show, status: :created, location: @contact }
-      else
-        format.html { render :new }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
-      end
+    if @contact.save
+      flash[:notice] = "Thank you for the message!"
+      redirect_to root_path
+    else
+      flash[:notice] = "Sorry something went wrong please send it again!"
+      redirect_to new_contact_path
     end
+
   end
 
   # PATCH/PUT /contacts/1
