@@ -47,6 +47,7 @@ section.module.parallax {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+
 }
 section.module.parallax-1 {
   background-image: url("commit3.jpg");
@@ -55,6 +56,7 @@ section.module.parallax-1 {
 
 #best_seller{
 	text-align: center;
+
 	h2{
 	font-family: "Montserrat", sans-serif;
 	text-transform: uppercase;
@@ -67,13 +69,16 @@ section.module.parallax-1 {
 
 #src{
 	margin-top: 100px;
+
 }
 
 .comments{
 	margin: auto;
 	margin-top: 100px;
 	padding:30px;
-	width: 500px;
+	width: 100%;
+	max-width: 500px;
+	min-width: 250px;
 	border:none;
     border-radius: 4px;
   	box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.7);
@@ -99,3 +104,4 @@ section.module.parallax-1 {
 	padding-top: 10px;
 	margin:auto;
 }
+
