@@ -15,18 +15,25 @@
   </head>
   <body>
     <link href='http://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="width:100%; background-color: rgba(0,0,0,0.7); border:none;">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%; background-color: rgba(0,0,0,0.7); border:none;">
       <div class="container-fluid" >
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" style="padding:0; padding-left: 25px;" href="/"><%=image_tag("logo.png", size:"50x50")%></a>
         </div>
-        <ul class="nav navbar-nav" style="float:right;">
-          <li><%=link_to "Home", root_path%></li>
-          <li><button type="button" class="btn btn-primary btn-md btn-modal" data-toggle="modal" data-target="#myModal">Menu</button></li>
-          <li><%=link_to "Contact Us", new_contact_path%></li> 
-        </ul>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav" style="float:right;">
+            <li><%=link_to "Home", root_path%></li>
+            <li><button type="button" class="btn btn-primary btn-md btn-modal" data-toggle="modal" data-target="#myModal">Menu</button></li>
+            <li><%=link_to "Contact Us", new_contact_path%></li> 
+          </ul>
+        </div>
       </div>
-    </nav>
+    </div>
     <%= yield %>
 
     <div class="modal fade" id="myModal" role="dialog">
@@ -184,16 +191,16 @@
               <h5>Chai Latte<span>MYR 4</span></h5>                
             </div>
           </div>
-      </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+     <section class="module parallax parallax-2" style="height:400px;">
+      <h1>Looking for a place to host an Event?</h1>
+      <form class="button" method="get" action="/contacts/new">
+        <input type="submit" value="Contact Us" class="contact">
+      </form>
     </section>
-  </div>
-  <footer>
-   <section class="module parallax parallax-2" style="height:400px;">
-    <h1>Looking for a place to host an Event?</h1>
-    <form class="button" method="get" action="/contacts/new">
-      <input type="submit" value="Contact Us" class="contact">
-    </form>
-  </section>
-</footer>
+  </footer>
 </body>
 </html>
