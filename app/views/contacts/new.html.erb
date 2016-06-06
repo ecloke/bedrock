@@ -13,65 +13,74 @@
 			</td>
 			<td class="contact_form"><%= render 'form' %></td>
 		</tr>
+		<tr>
+			<td>	<% if flash[:notice] %>
+			<div class="alert alert-success" style="height:60px; width:300px; margin:auto; float:left;">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<%=flash[:notice]%>
+				</div>
+				<%end%>
+			</td>
+		</tr>
 	</table>
 </div>
 
 <script type="text/javascript">
 	
-$(document).ready(function(){
-	$("#1").click(function(){
-		$("#breakfast").fadeIn(1000);
-		$("#pasta").hide();
-		$("#dessert").hide();
-		$("#rice").hide();
-		$("#drinks").hide();
-		$("#snacks").hide();
+	$(document).ready(function(){
+		$("#1").click(function(){
+			$("#breakfast").fadeIn(1000);
+			$("#pasta").hide();
+			$("#dessert").hide();
+			$("#rice").hide();
+			$("#drinks").hide();
+			$("#snacks").hide();
 
-	});
-	$("#2").click(function(){
-		$("#snacks").fadeIn(1000);
-		$("#pasta").hide();
-		$("#dessert").hide();
-		$("#rice").hide();
-		$("#drinks").hide();
-		$("#breakfast").hide();
+		});
+		$("#2").click(function(){
+			$("#snacks").fadeIn(1000);
+			$("#pasta").hide();
+			$("#dessert").hide();
+			$("#rice").hide();
+			$("#drinks").hide();
+			$("#breakfast").hide();
 
-	});
-	$("#3").click(function(){
-		$("#pasta").fadeIn(1000);
-		$("#snacks").hide();
-		$("#dessert").hide();
-		$("#rice").hide();
-		$("#drinks").hide();
-		$("#breakfast").hide();
+		});
+		$("#3").click(function(){
+			$("#pasta").fadeIn(1000);
+			$("#snacks").hide();
+			$("#dessert").hide();
+			$("#rice").hide();
+			$("#drinks").hide();
+			$("#breakfast").hide();
 
-	});
-	$("#4").click(function(){
-		$("#rice").fadeIn(1000);
-		$("#snacks").hide();
-		$("#dessert").hide();
-		$("#pasta").hide();
-		$("#drinks").hide();
-		$("#breakfast").hide();
+		});
+		$("#4").click(function(){
+			$("#rice").fadeIn(1000);
+			$("#snacks").hide();
+			$("#dessert").hide();
+			$("#pasta").hide();
+			$("#drinks").hide();
+			$("#breakfast").hide();
 
-	});
-	$("#5").click(function(){
-		$("#drinks").fadeIn(1000);
-		$("#snacks").hide();
-		$("#dessert").hide();
-		$("#rice").hide();
-		$("#pasta").hide();
-		$("#breakfast").hide();
+		});
+		$("#5").click(function(){
+			$("#drinks").fadeIn(1000);
+			$("#snacks").hide();
+			$("#dessert").hide();
+			$("#rice").hide();
+			$("#pasta").hide();
+			$("#breakfast").hide();
 
-	});
-	$("#6").click(function(){
-		$("#dessert").fadeIn(1000);
-		$("#snacks").hide();
-		$("#drinks").hide();
-		$("#rice").hide();
-		$("#pasta").hide();
-		$("#breakfast").hide();
+		});
+		$("#6").click(function(){
+			$("#dessert").fadeIn(1000);
+			$("#snacks").hide();
+			$("#drinks").hide();
+			$("#rice").hide();
+			$("#pasta").hide();
+			$("#breakfast").hide();
 
+		});
 	});
-});
 </script>
